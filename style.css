@@ -1,0 +1,369 @@
+:root {
+    --dark: #19191B;
+    --gray: #696871;
+    --purple: #5454D4;
+    --orange: #FF7143;
+}
+
+html {
+    scroll-padding: 100px;
+    scroll-behavior:smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM sans", sans-serif;
+}
+
+main {
+    margin-top: 141px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    padding-block: 30px;
+    top: 0;
+}
+
+[class *= "__container"] {
+    max-width: 1069px;
+    margin-inline: auto;
+    
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    gap: 49px;
+}
+
+.header__list-link {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.47px;
+    color: var(--gray);
+    transition: color 0.3s;
+}
+
+.header__list-link.active {
+    color: var(--dark);
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 10px;
+}
+
+.header__list-link:hover {
+    color: var(--dark);
+}
+
+.header__button, .hero__button {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: white;
+    padding: 19px 59px;
+    background-color: var(--orange);
+    border-radius: 10px;   
+    transition: 0.3s;
+}
+
+.header__button:hover, .hero__button:hover {
+    opacity: 90%;
+}
+
+.hero {
+    padding-block: 70px;
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero__image {
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: -2.5px;
+    color: var(--dark);
+    line-height: 77px;
+}
+
+.hero__content {
+    max-width: 423px;
+    padding-block: 92px;
+}
+
+.hero__desc, .feature__desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+    color: var(--gray);
+    margin-top: 30px;
+}
+
+.hero__buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.hero__button {
+    background-color: var(--purple);
+}
+
+.hero_img {
+    width: 60px;
+    height: 60px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E7E7E7;
+    border-radius: 100px;
+}
+
+.companies {
+    padding-block: 30px;
+}
+
+.companies__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features {
+    padding-block: 120px;
+}
+
+.features__container {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__content {
+    max-width: 459px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56px;
+}
+
+.feature__link {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: var(--purple);
+}
+
+.feature__link:hover {
+    text-decoration: underline;
+}
+
+.mini-features {
+    padding-block: 32px;
+}
+
+.mini-features__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 74px;
+}
+
+.mini-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.mini-feature__header {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.mini-feature__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+    color: var(--dark);
+}
+
+.mini-feature__desc {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: var(--gray);
+}
+
+.mini-feature__img {
+    height: 97px;
+}
+
+.subscription {
+    padding-block: 118px 158px;
+}
+
+.subscription__container {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+}
+
+.subscription__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscription__title {
+    max-width: 523px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.88px;
+    color: var(--dark);
+}
+
+.subscription__tabs {
+    display: flex;
+    border-block: 5px solid #F7F7FB;
+    border-inline: 6px solid #F7F7FB;
+    border-radius: 10px;
+}
+
+.subscription__tab {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    border: none;
+    background-color: #F7F7FB;
+    padding: 17px 56px;
+    border-radius: 0 10px 10px 0;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.subscription__tab.active {
+    background-color: var(--purple);
+    border-radius: 10px 0 0 10px;
+    color: white;
+}
+
+.subscription__plans {
+    display: grid;
+    grid-template-columns: 1fr 1.14fr 1fr;
+    gap: 17px;
+}
+
+.subscription__plan {
+    padding: 34px 23px 27px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subscription__plan-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.56px;
+    color: var(--gray);
+}
+
+.subscription__plan-price {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    letter-spacing: -1.03px;
+    color: var(--dark);
+    margin-top: 22px;
+}
+
+.subscription__plan-feature {
+    font-family: "Mulish", sans-serif;
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: -0.53px;
+    color: var(--gray);
+    margin-top: 28px;
+}
+
+.subscription__plan-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-block: 19px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: var(--purple);
+    margin-top: 36px;
+}
+
+.subscription__plan.active {
+    background-color: var(--orange);
+}
+
+.subscription__plan.active .subscription__plan-title {
+    color: rgba(255, 255, 255, 70%);
+}
+
+.subscription__plan.active .subscription__plan-price, 
+.subscription__plan.active .subscription__plan-feature, 
+.subscription__plan.active .subscription__plan-button {
+    color: white;
+}
+
+.subscription__plan.active .subscription__plan-button {
+    background-color: #9F3919;
+}
+
+.subscription__plan-price > span {
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
